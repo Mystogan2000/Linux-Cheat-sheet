@@ -1,16 +1,24 @@
+###################
+//Search
 grep . -name  "*.py"
 find . name "PyClamitc.py"
+Grep -r "fadsfa"
+Ls -d */   list only directories
 
+####################
 //Deletion commands
 rm -rf dir     //rm can remove file with write permission also
 rm -r dir/file_name
 tar zxvf fileNameHere.tgz
 
-
-Grep -r "fadsfa"
-Ls -d */   list only directories
 ####################
-Packet capture:
+//Alias
+alias cleanbld="/tools/bin/fi_emake_wrapper.git clean"
+Vi ~/.bashrc
+Compile:- source ~/.bashrc
+
+####################
+//Packet capture
 tcpdump -i tap30 -port 80
 
 ####################
@@ -18,11 +26,11 @@ File copy from scp server: scp -r user@10.101.10.76:/var/lib/tftpboot/file.txt .
 File upload to scp server: scp file.txt user@10.101.10.76:/var/lib/tftpboot/  
 
 #####################
-CPU Usage:
-
+//CPU Usage
 debug linux top -H -o +%CPU
 
 #####################
-VIM shortcuts
+//VIM shortcuts
 :set nums
+
 ######################
