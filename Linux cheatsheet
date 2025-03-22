@@ -9,14 +9,16 @@ tar zxvf fileNameHere.tgz
 
 Grep -r "fadsfa"
 Ls -d */   list only directories
+####################
+Packet capture:
+tcpdump -i tap30 -port 80
 
-
-
+####################
 File copy from scp server: scp -r user@10.101.10.76:/var/lib/tftpboot/file.txt .
 File upload to scp server: scp file.txt user@10.101.10.76:/var/lib/tftpboot/  
 
 #####################
-CPU Usage
+CPU Usage:
 
 debug linux top -H -o +%CPU
 
