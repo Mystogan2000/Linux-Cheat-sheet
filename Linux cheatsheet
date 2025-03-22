@@ -28,9 +28,15 @@ File upload to scp server: scp file.txt user@10.101.10.76:/var/lib/tftpboot/
 #####################
 //CPU Usage
 debug linux top -H -o +%CPU
-
+ps -aux
 #####################
 //VIM shortcuts
 :set nums
+
+######################
+//Configure Linux ip
+ifconfig br0 10.176.137.230 netmask 255.255.255.128 up
+sh-4.4# ip route add default via 10.176.137.129 
+sh-4.4# ping 10.177.16.144
 
 ######################
