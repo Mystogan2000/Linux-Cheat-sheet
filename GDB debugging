@@ -1,0 +1,20 @@
+bt
+Info thread
+thread apply all bt
+break function_name()
+break file_path:line
+
+
+Live Debugger:-
+gdbserver  --attach  :9999 2897 <- [pid of process-> ps -ef | grep Fast]
+
+From dev:-
+bash-4.1$ RUN GDB
+
+(gdb)  target remote 10.10.10.10:9999
+(gdb)  list function_name (no arguments)
+(gdb)  break functionname
+(gdb)  info break
+(gdb)  c (till it hit breakpint)
+(gdb) list (hit enter) then give break linenumber breakpoint will get added to that line number of file
+(gdb) d 1              ------------delete breakpoint 1
