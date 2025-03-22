@@ -1,0 +1,23 @@
+grep . -name  "*.py"
+find . name "PyClamitc.py"
+
+//Deletion commands
+rm -rf dir     //rm can remove file with write permission also
+rm -r dir/file_name
+tar zxvf fileNameHere.tgz
+
+
+Grep -r "fadsfa"
+Ls -d */   list only directories
+
+
+
+File copy from scp server: scp -r user@10.101.10.76:/var/lib/tftpboot/file.txt .
+File upload to scp server: scp file.txt user@10.101.10.76:/var/lib/tftpboot/  
+
+
+
+#####################
+VIM shortcuts
+:set nums
+######################
